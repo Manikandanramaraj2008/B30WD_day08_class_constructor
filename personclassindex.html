@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Write a “person” class to hold all the details.
+// ******************************************************
+class person {
+  constructor(name,father_name,mother_name,aadhar_no,gender,address,mobile_No,Email) {
+    this.name = name ;
+    this.father_name = father_name ;
+    this.mother_name = mother_name;
+    this.aadhar_no = aadhar_no;
+    this.gender = gender; ;
+    this.address = address ;
+    this.mobile_No = mobile_No; ;
+    this.Email = Email;
+ }
+  person_name(){
+      return`my name is ${this.name}`;
+  }
+
+  person_father_name() {
+    return `my father name is ${this.father_name}`;
+  }
+  person_mother_name() {
+    return `my mother name is ${this.mother_name}`;
+  }
+  person_aadhar_no() {
+    return `aadhar_no  is ${this.aadhar_no}`;
+  }
+  person_gender() {
+    return `i am ${this.gender}`;
+  }
+  person_address() {
+    return `my address is ${this.adress}`;
+  }
+  person_mobile_no() {
+    return `my mobile_no is ${this.mobile_No}`;
+  }
+  person_Email() {
+    return `my email is ${this.Email}`;
+  }
+}
+//object
+const mani_obj = new person("mani","Ram","saras","9847-3260-5893","Male","Vadalur","9660510001","mani@gmail.com");
+
+console.log(mani_obj.person_name());
+console.log(mani_obj.person_father_name());
+console.log(mani_obj.person_mother_name());
+console.log(mani_obj.person_aadhar_no());
+
+console.log(mani_obj.person_gender());
+console.log(mani_obj.person_address());
+console.log(mani_obj.person_mobile_no());
+console.log(mani_obj.person_Email());
+
+// output-
+// my name is mani
+// my father name is Ram
+// my mother name is saras
+// my aadhar no is 9847-3260-5893
+// i am male
+// my adress is vadalur
+// my mobile no is 9660510001
+// my email is mani@gmail.com
+
+
+
+    </script>
+    
+</body>
+</html>

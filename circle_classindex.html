@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// converting uml circle - class diagram
+// ***********************************************************
+class circle{
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+        
+    }
+    circle(){
+        console.log("this is circle")
+    }
+    circle(radius){
+        console.log("method overriding")
+    }
+    circle(radius,color){
+        console.log(this.radius,this.color+'final method overriding which accepts by javascripot')
+    }
+    getradius(){
+        console.log(" radius of the circle is "+this.radius)
+    }
+    setradius(newradius){
+       this.radius=newradius;
+
+    }
+    getcolor(){
+        console.log(' color of the circle is '+this.color)
+    }
+
+    setcolor(newcolor){
+        this.color=newcolor;
+    }
+    getarea(){
+        console.log('area of circle is '+(Math.PI*Math.pow(this.radius,2)))
+    }
+    getcircumference(){
+        console.log(' circumference of a circle is '+(2*Math.PI*this.radius))
+    }
+
+} 
+let circle1=new circle(1,"yellow");
+
+circle1.getradius();
+circle1.setradius(4)
+circle1.getradius();
+circle1.getcolor();
+circle1.setcolor("black");
+circle1.getcolor();
+circle1.getarea();
+circle1.getcircumference();
+
+// Output:
+//  radius of the circle is 1
+//  radius of the circle is 4
+//  color of the circle is yellow
+//  color of the circle is black
+//  area of circle is 50.26548245743669
+//  circumference of a circle is 25.132741228718345
+
+
+    </script>
+</body>
+</html>

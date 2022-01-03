@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 1)The class Movie is stated below. An instance of class Movie represents a film. This class has the following three properties:
+
+
+// title, which is a String representing the title of the movie
+// studio, which is a String representing the studio that made the movie
+// rating, which is a String representing the rating of the movie (i.e. PG13, R, etc)
+
+// 1)a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
+
+
+class movie{
+constructor(title,studio,rating){
+  this.title=title;
+  this.studio=studio;
+  this.rating=rating;
+}
+
+}
+var movie1=new movie("doctor","vrmallstudio","pg13");
+var movie2=new movie('annatha','marinastudio','r');
+console.log(movie1,movie2);
+
+// Output:
+
+// movie { title: 'doctor', studio: 'vrmalltudio', rating: 'pg13' } movie { title: 'bahubali', studio: 'studio', rating: 'r' }
+
+// 1)B)The constructor for the class Movie will set the class property rating to "PG" as default when no rating provided. 
+
+// code-
+class movie3{
+constructor(title,studio,rating='PG'){
+  this.title=title;
+  this.studio=studio;
+  this.rating=rating;
+}
+
+}
+var movie1=new movie("satya","studio");
+var movie2=new movie('vani','A1studio','r');
+console.log(movie1,movie2,movie3);
+
+
+// Output:
+// movie { title: 'sathya', studio: 'studio', rating: 'PG' } movie { title: 'vani', studio: 'A', rating: 'r' }
+
+
+    </script>
+    
+</body>
+</html>
